@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img class="back-card" src="assets/images/bg-card-back.png" alt="" />
+    <p class="threeCardNumber" id="CVC">000</p>
+
+    <img class="font-card" src="assets/images/bg-card-front.png" alt="" />
+    <div class="CardAtributes">
+      <div class="twoOval">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+
+      <p class="cardNumbers" id="cardNumbers">0000 0000 0000 0000</p>
+      <div class="flex">
+        <p id="NameinputTextcontent">Tengo Tedeluri</p>
+        <div class="row5">
+          <p id="DateTextcontent">00</p>
+          <p>/</p>
+          <p id="DateTextcontent2">00</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="none">
+        <div class="gap">
+          <h1>Cardholder Name</h1>
+          <input
+            class="input1 allinput"
+            id="NameInput"
+            type="text"
+            name="text"
+            placeholder="e.g. Jane Appleseed"
+          />
+        </div>
+
+        <div class="gap">
+          <h1>Card Number</h1>
+          <input
+            class="allinput"
+            id="CardNumber"
+            type="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <p class="WrongFormat" id="WrongFormat">Wrong format, numbers only</p>
+        </div>
+
+        <div class="gap">
+          <div class="row">
+            <div class="column">
+              <h1>Exp. Date (MM/YY)</h1>
+              <div class="row3">
+                <input
+                  class="input12"
+                  id="DateInput1"
+                  type="number"
+                  placeholder="MM"
+                />
+                <input
+                  class="input12"
+                  id="DateInput2"
+                  type="number"
+                  placeholder="YY"
+                />
+              </div>
+              <p class="WrongFormat" id="blank">Can’t be blank</p>
+            </div>
+            <div class="column">
+              <h1>CVC</h1>
+
+              <input
+                class="input3"
+                id="input4"
+                type="number"
+                placeholder="e.g. 123"
+              />
+              <p class="WrongFormat" id="blank2">Can’t be blank</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="completeConteiner" id="completeConteiner">
+        <img class="photos" src="assets/images/icon-complete.svg" alt="" />
+        <h2>THANK YOU!</h2>
+        <p>We’ve added your card details</p>
+      </div>
+
+      <button class="confirmButton" id="confirmButton">
+        <p>Confirm</p>
+      </button>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
